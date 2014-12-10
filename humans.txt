@@ -1,0 +1,11 @@
+/* TEAM */
+	Developer: Ben Zhang
+	Contact: benzhangniu [at] gmail.com
+	Twitter: @ben785314280
+	From: Vancouver, British Columbia, Canada
+
+/* SITE */
+	Last update: 2014-11-16
+  	Standards: HTML5, CSS3
+  	Components: jQuery, Modernizr, Zurb Foundation, FastClick, jQuery Knob
+  	Software: Sublime Text, FileZilla, Codekit 2

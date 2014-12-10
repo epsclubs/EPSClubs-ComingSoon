@@ -1,0 +1,240 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+/* border-serrated - a zig zag triangle border with linear gradient
+*/
+/* body {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+  font-weight: 200;
+  font-size: 20px;
+} */
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?-776h37');
+  src:url('../fonts/icomoon.eot?#iefix-776h37') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-776h37') format('woff'),
+    url('../fonts/icomoon.ttf?-776h37') format('truetype'),
+    url('../fonts/icomoon.svg?-776h37#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+  content: "\e603";
+}
+.icon-unicorn:before {
+  content: "\e602";
+}
+.icon-square-round-edges:before {
+  content: "\e601";
+vertical-align: -5%;
+}
+.icon-github:before {
+  content: "\e600";
+}
+
+
+.parallax-background {
+  background: url('http://foundation.zurb.com/assets/img/marquee-stars.svg') #46166B;
+  //background-color: #46166B;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  display:table;
+  //padding:30px 0 70px 0;
+  height: 100%;
+}
+
+$parallax-header-color:$white;
+$parallax-subheader-color: scale-color($parallax-header-color, $lightness: 35%);
+$parallax-anchor-color:$white;
+$parallax-anchor-hover-color: scale-color($parallax-anchor-color, $lightness: -14%);
+
+.parallax-background h1 {
+  color: $parallax-header-color;
+}
+.parallax-background .sub-header {
+  color: $parallax-header-color;
+}
+.parallax-background a{
+  color: $parallax-anchor-color
+}
+.parallax-background a:hover{
+  color: $parallax-anchor-hover-color;
+}
+
+.intro-text {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  //margin-top: 5%;
+  display:table-cell;
+  vertical-align: middle;
+}
+.intro-text h1{
+	color: #fff;
+}
+.intro-text input:disabled, .small-knob input:disabled{
+	opacity:inherit;
+  color: inherit;
+}
+.parallax-content,#info-bar {
+  background-image: url('../images/bg.png');
+  max-width: 100%;
+  position: relative;
+  padding-top: 50px;
+  font-size: 20px;
+  background-color: $gainsboro;
+  //opacity:0.5;
+}
+
+#main-knob input{
+  cursor:pointer;
+}
+#info-bar{
+  height: 50px;
+  //opacity: 0.5;
+  //background-color: #000;
+  background-image:none;
+  color: $white;
+  margin-top:-50px;
+  padding-top:0;
+  
+  background:rgb(0,0,0);  
+  background: transparent\9;  
+  background:rgba(0,0,0,0.4);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);  
+  zoom: 1; 
+}
+#info-bar .columns{
+  margin:12.5px 0;
+}
+#info-bar p{
+  margin:0;
+}
+#info-bar a{
+  color:$white;
+}
+#info-bar a:hover{
+  color:scale-color($white, $lightness: -14%);;
+}
+
+#red-knob-name:before{
+  color:red;
+}
+#orange-knob-name:before{
+  color:orange;
+}
+#green-knob-name:before{
+  color:green;
+}
+#purple-knob-name:before{
+  color:purple;
+}
+
+#parts-buttons li a{
+  width:15em;
+}
+
+#parts-buttons li a:hover:before{
+  content:"Coming Soon!";
+}
+#parts-buttons li a:hover span{
+  display:none;
+}
+
+#parts-buttons li{
+  display: inline-block;
+  float: none;
+}
+@media #{$small-only} {
+  #parts-buttons li a{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  #parts-buttons li{
+    display: inherit;
+  }
+}
+@media #{$large-up} {
+	.parallax-background {
+		height: 100%;
+		position: fixed;
+	}
+	.parallax-content,#info-bar{
+	  top: 93%;
+	}
+  #info-bar{
+    margin-top:0px;
+  }
+}
+.border{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.border>div {
+    display: inline-block;
+    width: 0;
+    border: 24px transparent solid;
+    border-bottom: 24px red solid;
+}
+.padding-top-20{
+  padding-top:20px;
+}
